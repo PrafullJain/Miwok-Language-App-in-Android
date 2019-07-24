@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/tan_background"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/numbers"
+        style="@style/CategoryStyle"
+        android:background="@color/category_numbers"
+        android:text="@string/category_numbers"
+        android:onClick="numberList"/>
+
+    <TextView
+        android:id="@+id/family"
+        style="@style/CategoryStyle"
+        android:background="@color/category_family"
+        android:text="@string/category_family"
+        android:onClick="familyList"/>
+
+    <TextView
+        android:id="@+id/colors"
+        style="@style/CategoryStyle"
+        android:background="@color/category_colors"
+        android:text="@string/category_colors"
+        android:onClick="colorList"/>
+
+    <TextView
+        android:id="@+id/phrases"
+        style="@style/CategoryStyle"
+        android:background="@color/category_phrases"
+        android:text="@string/category_phrases"
+        android:onClick="phraseList"/>
+    <TextView
+        android:id="@+id/tvabmw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="About Miwok (Wikipedia Sources)"
+        android:textColor="#0000ff "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="#006400"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_miwok"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+    </ScrollView>
+
+
+</LinearLayout>
